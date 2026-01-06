@@ -1,18 +1,19 @@
 # Data-Driven-Modeling-of-Urban-Air-Quality-AQI-Using-Integrated-Machine-Learning-
 Data-Driven Modeling of Urban Air Quality (PM2.5) Using Machine Learning
-Project Overview
+
+-Project Overview:
 
 Air pollution is a major public health concern, with PM2.5 (fine particulate matter) being one of the most harmful pollutants due to its ability to penetrate deep into the respiratory system. This project develops a data-driven machine learning framework to forecast daily PM2.5 concentrations in London, supporting proactive air quality monitoring and public health decision-making.
 
 Using 12.5 years of daily air quality data (2013–2025) obtained from the Open-Meteo Air Quality API, this study compares sequential deep learning and traditional machine learning models under rigorous time-series validation.
 
- Objectives
+- Objectives:
 
 Collect and preprocess long-term London air quality data (2013–2025)
 
 Apply temporal train–test splitting to prevent data leakage
 
-Develop and compare:
+-Develop and compare:
 
 LSTM (Long Short-Term Memory) networks
 
@@ -26,7 +27,7 @@ Generate future PM2.5 forecasts (2026–2030)
 
 Provide insights into model performance, interpretability, and limitations
 
-Dataset
+-Dataset:
 
 Source: Open-Meteo Air Quality API (CAMS – Copernicus Atmosphere Monitoring Service)
 
@@ -42,7 +43,7 @@ Target Variable: PM2.5 (µg/m³)
 
 The dataset contains 4,566 observations and is publicly available, anonymized, and ethically compliant.
 
-Models Implemented
+-Models Implemented:
 1. LSTM (Deep Learning – Sequential Model)
 
 Bidirectional LSTM architecture
@@ -69,7 +70,7 @@ Feature scaling using StandardScaler
 
 Hyperparameter tuning with GridSearchCV
 
- Evaluation Metrics
+ -Evaluation Metrics:
 
 Models are evaluated on a future test set (2022–2025) using:
 
@@ -81,7 +82,7 @@ MAPE – Percentage-based error
 
 R² – Explained variance
 
- Results
+- Results:
 Model	RMSE (µg/m³)	MAE (µg/m³)	R²
 LSTM	4.03	2.93	0.50
 XGBoost	5.58	4.15	0.06
@@ -98,7 +99,7 @@ Long-term forecasts (3–5 years) reveal increasing uncertainty
 Highlights the need for periodic model retraining in operational systems
 
 
-Technologies Used
+-Technologies Used:
 
 Python
 
